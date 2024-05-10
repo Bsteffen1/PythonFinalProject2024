@@ -1,0 +1,293 @@
+* {box-sizing: border-box;}
+
+body {
+	display: block;
+	background-color: #186816;
+	color: black;
+	font-family: verdana;
+	margin: auto;
+}
+header{
+	margin: 0;
+}
+header a:link {
+	text-decoration: none;
+	color: white;
+}
+header a:visited {
+	text-decoration: none;
+	color: white;
+}
+header a:hover {
+	color: lightblue;
+}
+h1 {
+	background-color:#186816;
+	color: #FFFFFF;
+	font-family: 'Times New Roman', Georgia, Times, serif;
+	font-size: 3em;
+	text-align: center;
+	font-size: 1.5em;
+	padding: 1em;
+	margin: 0;
+}
+nav {
+	font-size: 1.2em;
+	text-align: center;
+	background-color: white;
+}
+nav a {
+	text-decoration: none;
+}
+nav a:link {
+	color: #1A7C7A;
+}
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #a52a2a;
+	cursor: pointer;
+}
+nav ul {
+	display: flex;
+	list-style-type: none;
+	padding-left: 1em;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0;
+	padding-left: 0;
+}
+nav li {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	width: 100%;
+	border-bottom: 1px solid;
+}
+main {
+	display: block;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+h2 {
+	color: black;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	padding-top: 10px;
+	text-align: center;
+}
+h3 {
+	color:black;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer {
+	font-size: .70em;
+	font-style: italic;
+	text-align: center;
+	padding: 1em;
+	background-color: #A05441;
+}
+#wrapper {
+	display: block;
+	position: relative;
+	margin:auto;
+	margin-top: 50px;
+	width: 70%;
+	padding: 20px;
+	background-color: white;
+	text-align: center;
+	border: #1A7C7A;
+	border-width: 20px;
+	border-style:inset;
+}
+#login {
+	display: block;
+	margin:auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	width: 50%;
+	padding: 10px;
+	padding-bottom: 30px;
+	background-color: white;
+	text-align: center;
+	border: #1A7C7A;
+	border-width: 20px;
+	border-style:inset;
+}
+#login form{
+	display: block;
+	
+}
+#login input{
+	width: 33%;
+	margin-left: 33%;
+	margin-right: 33%;
+	margin-top: 10px;
+	border: 4px #1A7C7A;
+	border-style: inset;
+}
+#bigimage {
+	display: block;
+	position: fixed;
+	background-image: url('/foods.jpg');
+	width: 100%;
+	height: 100%;
+}
+#searchButton{
+	border-color: #1A7C7A;
+	position: relative;
+	transform: translateY(80%);
+	left: 43%;
+	margin: -600px;
+	font-size: 20px;
+	padding: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-width: 2px;
+}
+#createButton{
+	border-color: #1A7C7A;
+	position: relative;
+	left: 92%;
+	top: 3%;
+	/* transform: translateY(180%); */
+	margin: -50px;
+	font-size: 20px;
+	padding: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-width: 2px;
+}
+section {
+	padding-left: .5em;
+	padding-right: .5em;
+}
+input{
+	border: 2px solid;
+	display: block;
+	font-size: 22px;
+}
+.item1{ grid-area: RecipeName;}
+.item2{ grid-area: Author;}
+.item3{ grid-area: Description;}
+.item4{ grid-area: DishType;}
+.item5{ grid-area: instructions;}
+.item6{ grid-area: Difficulty;}
+.item7{ grid-area: ingredients;}
+.recipe {
+	display: grid;
+	grid-template-areas: 
+	'RecipeName RecipeName RecipeName RecipeName RecipeName'
+	'Author Description Description Description Description'
+	'DishType instructions instructions instructions instructions'
+	'Difficulty ingredients ingredients ingredients ingredients';
+	gap: 10px;
+	background-color: #1A7C7A;
+	padding: 10px;
+	
+}
+.recipe > div {
+	background-color: white;
+	padding: 10px;
+	
+}
+.profile {
+	display: block;
+	margin:auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 70%;
+	padding: 10px;
+	padding-bottom: 30px;
+	background-color: white;
+	border: #1A7C7A;
+	border-width: 20px;
+	border-style:inset;
+}
+.search {
+	display: block;
+	position: relative;
+	background-color: white;
+	text-align: center;
+	padding: 10px;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 70%;
+	border: #1A7C7A;
+	border-width: 20px;
+	border-style: inset;
+}
+.search input[type=text]{
+	margin: auto;
+	margin-bottom: 10px ;
+	padding: 10px;
+	border: #1A7C7A;
+	border-width: 3px;
+	border-style: inset;
+	width: 70%;
+	text-align: center;
+}
+.search form{
+	text-align: start;
+	color: black;
+}
+.title {
+	text-align: center;
+	font-size: 30px;
+	grid-area: header;
+	padding: 10px;
+}
+.descriptionlist {
+	text-align: left;
+	grid-area: list;
+}
+#mobile {
+	display: inline;
+}
+#destop {
+	display: none;
+}
+
+
+@media (min-width: 600px) {
+
+h1 {
+	font-size: 2em;
+	letter-spacing: .25em;
+}	
+nav li {
+	width: 12em;
+	border-bottom: none;
+}
+section {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+#flow {
+	display: flex;
+	flex-direction: row;
+}
+#mobile {
+	display: none;
+}
+#desktop {
+	display: inline;
+}
+  }
+
+
+@media (min-width: 1024px) {
+
+
+nav ul {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+#wrapper {
+	margin: 50px auto;
+	width: 70%;
+}
+} 
